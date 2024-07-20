@@ -23,7 +23,6 @@ def my_view(request):
     return HttpResponse('Hello World, tudo certo?')
 
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('sobre/', my_view),

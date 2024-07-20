@@ -19,7 +19,9 @@ from django.urls import path
 from django.http import HttpResponse
 
 
+# HTTP REQUEST
 def my_view(request):
+    # return HTTP response
     return HttpResponse('Hello World, tudo certo?')
 
 

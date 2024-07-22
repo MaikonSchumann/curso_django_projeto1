@@ -25,7 +25,13 @@ def my_view(request):
     return HttpResponse('Hello World, tudo certo?')
 
 
+def sobre_view(request):
+    # return HTTP response
+    return HttpResponse('La cucaracha, Heeeelow World, tudo certo?')
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sobre/', my_view),
+    path('sobre/', sobre_view),
+    path('', my_view),
 ]

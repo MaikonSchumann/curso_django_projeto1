@@ -11,7 +11,7 @@ def home_view(request):
 
 def contato_view(request):
     # return HTTP response
-    return HttpResponse('Página /CONTATO/')
+    return render(request, 'recipes/contato.html')
 
 
 def sobre_view(request):
